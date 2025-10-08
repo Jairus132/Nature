@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nature One Page</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: url("pic1.jpg") center center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .section-padding {
+      padding: 60px 0;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fst-italic fs-3" href="#">Nature</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Welcome to Nature</h1>
+    <p class="lead fst-italic">Explore the beauty of the natural world</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section-padding bg-info">
+  <div class="container text-center">
+    <h2>About Nature</h2>
+    <p class="lead fst-italic">Nature offers peace, beauty, and adventure. From lush forests to serene lakes, it's a reminder of how amazing our planet is.</p>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="section-padding">
+  <div class="container">
+    <h2 class="text-center mb-5">Gallery</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><img src="pic4.jpg" class="gallery-img" alt="Nature 1"></div>
+      <div class="col-md-4"><img src="pic7.jpg" class="gallery-img" alt="Nature 2"></div>
+      <div class="col-md-4"><img src="pic.jpg"class="gallery-img" alt="Nature 3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding bg-info">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-success px-4">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-white bg-dark py-3">
+  <p class="mb-0">&copy; 2025 Nature Website. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
